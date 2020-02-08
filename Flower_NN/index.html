@@ -20,7 +20,7 @@
             var dataR4 = [5.5, 1, 1];
 
             //unknown type (data we want to find)
-            var dataU = [4.5, 1, "it should be 1"];
+            var dataU = [4.5, 1, "1"];
 
             var all_points = [dataB1, dataB2, dataB3, dataB4, dataR1, dataR2, dataR3, dataR4];
 
@@ -55,7 +55,7 @@
                     // derivative of sigmoid can be written using more sigmoids! d/dz sigmoid(z) = sigmoid(z)*(1-sigmoid(z))
                     let dpred_dz = sigmoid(z) * (1-sigmoid(z));
 
-                    // I think you forgot these in your slope calculations?
+                  
                     let dz_dw1 = point[0];
                     let dz_dw2 = point[1];
                     let dz_db = 1;
